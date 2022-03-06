@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  postgres:
+    image: 'postgres'
+    container_name: 'typeorm_platzi'
+    environment:
+      POSTGRES_DB: 'typeormPlatzi'
+      POSTGRES_USER: 'typeormPlatzi'
+      POSTGRES_PASSWORD: 'typeormPlatzi'
+      ALLOW_IP_RANGE: '0.0.0.0/0'
+    ports:
+      - '5432:5432'
+  
